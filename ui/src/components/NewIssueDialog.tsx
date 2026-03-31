@@ -132,6 +132,8 @@ function buildAssigneeAdapterOverrides(input: {
       adapterConfig.effort = input.thinkingEffortOverride;
     } else if (adapterType === "opencode_local") {
       adapterConfig.variant = input.thinkingEffortOverride;
+    }else if (adapterType === "gemini_local") {
+      adapterConfig.variant = input.thinkingEffortOverride;
     }
   }
   if (adapterType === "claude_local" && input.chrome) {
