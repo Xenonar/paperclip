@@ -17,7 +17,7 @@ services:
 
   server:
     build:
-      context: ..
+      context: ${PWD:-..}
       dockerfile: Dockerfile
     ports:
       - "3100:3100"
